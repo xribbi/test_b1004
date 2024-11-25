@@ -1,0 +1,21 @@
+(base) std@edwk23:~/test$ conda env list
+# conda environments:
+#
+Pruning                  /home/std/.conda/envs/Pruning
+a1003                    /home/std/.conda/envs/a1003
+tf                       /home/std/.conda/envs/tf
+whisper                  /home/std/.conda/envs/whisper
+yolo                     /home/std/.conda/envs/yolo
+base                  *  /home/std/miniforge3
+DeepKNLP-24.03           /home/std/miniforge3/envs/DeepKNLP-24.03
+
+(base) std@edwk23:~/test$ conda activate a1003
+(a1003) std@edwk23:~/test$ python
+Python 3.10.14 | packaged by conda-forge | (main, Mar 20 2024, 12:45:18) [GCC 12.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import torch
+>>> torch.cuda
+<module 'torch.cuda' from '/home/std/.conda/envs/a1003/lib/python3.10/site-packages/torch/cuda/__init__.py'>
+>>> torch.cuda.is_available()
+True
+
