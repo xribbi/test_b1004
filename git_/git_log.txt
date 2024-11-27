@@ -1,0 +1,200 @@
+(a1003) std@edwk23:~/test$ git config -l
+http.sslverify=true
+http.sslcapath=/home/std/.conda/envs/a1003/ssl/cacert.pem
+http.sslcainfo=/home/std/.conda/envs/a1003/ssl/cacert.pem
+user.email=xribbi.oz@gmail.com
+user.name=xribbi
+color.ui=auto
+credential.https://github.com.helper=
+credential.https://github.com.helper=!/usr/bin/gh auth git-credential
+credential.https://gist.github.com.helper=
+credential.https://gist.github.com.helper=!/usr/bin/gh auth git-credential
+(a1003) std@edwk23:~/test$ git config -l > git_config-l_2.txt 
+(a1003) std@edwk23:~/test$ ll
+합계 20
+drwxrwxr-x  2 std std 4096 11월 27 16:16 .
+drwxr-xr-x 32 std std 4096 11월 27 16:15 ..
+-rw-rw-r--  1 std std   41 11월 27 15:25 2024-12-27-expire.txt
+-rw-rw-r--  1 std std  706 11월 27 16:14 git_config-l.txt
+-rw-rw-r--  1 std std  424 11월 27 16:16 git_config-l_2.txt
+(a1003) std@edwk23:~/test$ diff git_config-l.txt  git_config-l_2.txt 
+11,19d10
+< core.repositoryformatversion=0
+< core.filemode=true
+< core.bare=false
+< core.logallrefupdates=true
+< remote.origin.url=https://github.com/xribbi/test_b1004
+< remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+< branch.main.remote=origin
+< branch.main.merge=refs/heads/main
+< pull.rebase=false
+(a1003) std@edwk23:~/test$ ll
+합계 20
+drwxrwxr-x  2 std std 4096 11월 27 16:16 .
+drwxr-xr-x 32 std std 4096 11월 27 16:15 ..
+-rw-rw-r--  1 std std   41 11월 27 15:25 2024-12-27-expire.txt
+-rw-rw-r--  1 std std  706 11월 27 16:14 git_config-l.txt
+-rw-rw-r--  1 std std  424 11월 27 16:16 git_config-l_2.txt
+(a1003) std@edwk23:~/test$ mv git_config-l.txt  git_config-l_1.txt
+(a1003) std@edwk23:~/test$ ll
+합계 20
+drwxrwxr-x  2 std std 4096 11월 27 16:16 .
+drwxr-xr-x 32 std std 4096 11월 27 16:15 ..
+-rw-rw-r--  1 std std   41 11월 27 15:25 2024-12-27-expire.txt
+-rw-rw-r--  1 std std  706 11월 27 16:14 git_config-l_1.txt
+-rw-rw-r--  1 std std  424 11월 27 16:16 git_config-l_2.txt
+(a1003) std@edwk23:~/test$ ls -al
+합계 20
+drwxrwxr-x  2 std std 4096 11월 27 16:16 .
+drwxr-xr-x 32 std std 4096 11월 27 16:15 ..
+-rw-rw-r--  1 std std   41 11월 27 15:25 2024-12-27-expire.txt
+-rw-rw-r--  1 std std  706 11월 27 16:14 git_config-l_1.txt
+-rw-rw-r--  1 std std  424 11월 27 16:16 git_config-l_2.txt
+(a1003) std@edwk23:~/test$ git clone https://github.com/xribbi/test_b1004
+'test_b1004'에 복제합니다...
+remote: Enumerating objects: 63, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 63 (delta 2), reused 3 (delta 1), pack-reused 57 (from 1)
+오브젝트를 받는 중: 100% (63/63), 69.55 MiB | 19.42 MiB/s, 완료.
+델타를 알아내는 중: 100% (16/16), 완료.
+(a1003) std@edwk23:~/test$ ll
+합계 24
+drwxrwxr-x  3 std std 4096 11월 27 16:20 .
+drwxr-xr-x 32 std std 4096 11월 27 16:15 ..
+-rw-rw-r--  1 std std   41 11월 27 15:25 2024-12-27-expire.txt
+-rw-rw-r--  1 std std  706 11월 27 16:14 git_config-l_1.txt
+-rw-rw-r--  1 std std  424 11월 27 16:16 git_config-l_2.txt
+drwxrwxr-x  5 std std 4096 11월 27 16:20 test_b1004
+(a1003) std@edwk23:~/test$ cd test_b1004/
+(a1003) std@edwk23:~/test/test_b1004$ ll
+합계 2024
+drwxrwxr-x 5 std std   4096 11월 27 16:20  .
+drwxrwxr-x 3 std std   4096 11월 27 16:20  ..
+drwxrwxr-x 7 std std   4096 11월 27 16:20  .git
+drwxrwxr-x 2 std std   4096 11월 27 16:20  .ipynb_checkpoints
+-rw-rw-r-- 1 std std    867 11월 27 16:20  2024-11-25_a1003_pytorch.txt
+-rw-rw-r-- 1 std std  16878 11월 27 16:20  Pytorch_tutorial_2024-11-25.ipynb
+-rw-rw-r-- 1 std std  74231 11월 27 16:20  Pytorch_tutorial_2024-11-25_xtal6.ipynb
+-rw-rw-r-- 1 std std     16 11월 27 16:20  README.md
+-rw-rw-r-- 1 std std  39913 11월 27 16:20 'To install the GitHub CLI.hwpx'
+-rw-rw-r-- 1 std std  30305 11월 27 16:20 'To install the GitHub CLI.pdf'
+drwxrwxr-x 3 std std   4096 11월 27 16:20  doc
+-rw-rw-r-- 1 std std    621 11월 27 16:20  git_.bat
+-rwxrwxr-x 1 std std     63 11월 27 16:20  git_.sh
+-rw-rw-r-- 1 std std    462 11월 27 16:20  git_config-l.txt
+-rw-rw-r-- 1 std std  99546 11월 27 16:20  tensor_tutorial_2024-11-25.ipynb
+-rw-rw-r-- 1 std std 844755 11월 27 16:20  tensor_tutorial_2024-11-25_a1003_edwk23.ipynb
+-rw-rw-r-- 1 std std 453865 11월 27 16:20  tensor_tutorial_2024-11-25_xtal6.ipynb
+-rw-rw-r-- 1 std std 453864 11월 27 16:20  tensor_tutorial_2024-11-26_x188.ipynb
+(a1003) std@edwk23:~/test/test_b1004$ ls -al
+합계 2024
+drwxrwxr-x 5 std std   4096 11월 27 16:20  .
+drwxrwxr-x 3 std std   4096 11월 27 16:20  ..
+drwxrwxr-x 7 std std   4096 11월 27 16:20  .git
+drwxrwxr-x 2 std std   4096 11월 27 16:20  .ipynb_checkpoints
+-rw-rw-r-- 1 std std    867 11월 27 16:20  2024-11-25_a1003_pytorch.txt
+-rw-rw-r-- 1 std std  16878 11월 27 16:20  Pytorch_tutorial_2024-11-25.ipynb
+-rw-rw-r-- 1 std std  74231 11월 27 16:20  Pytorch_tutorial_2024-11-25_xtal6.ipynb
+-rw-rw-r-- 1 std std     16 11월 27 16:20  README.md
+-rw-rw-r-- 1 std std  39913 11월 27 16:20 'To install the GitHub CLI.hwpx'
+-rw-rw-r-- 1 std std  30305 11월 27 16:20 'To install the GitHub CLI.pdf'
+drwxrwxr-x 3 std std   4096 11월 27 16:20  doc
+-rw-rw-r-- 1 std std    621 11월 27 16:20  git_.bat
+-rwxrwxr-x 1 std std     63 11월 27 16:20  git_.sh
+-rw-rw-r-- 1 std std    462 11월 27 16:20  git_config-l.txt
+-rw-rw-r-- 1 std std  99546 11월 27 16:20  tensor_tutorial_2024-11-25.ipynb
+-rw-rw-r-- 1 std std 844755 11월 27 16:20  tensor_tutorial_2024-11-25_a1003_edwk23.ipynb
+-rw-rw-r-- 1 std std 453865 11월 27 16:20  tensor_tutorial_2024-11-25_xtal6.ipynb
+-rw-rw-r-- 1 std std 453864 11월 27 16:20  tensor_tutorial_2024-11-26_x188.ipynb
+(a1003) std@edwk23:~/test/test_b1004$ git config -l
+http.sslverify=true
+http.sslcapath=/home/std/.conda/envs/a1003/ssl/cacert.pem
+http.sslcainfo=/home/std/.conda/envs/a1003/ssl/cacert.pem
+user.email=xribbi.oz@gmail.com
+user.name=xribbi
+color.ui=auto
+credential.https://github.com.helper=
+credential.https://github.com.helper=!/usr/bin/gh auth git-credential
+credential.https://gist.github.com.helper=
+credential.https://gist.github.com.helper=!/usr/bin/gh auth git-credential
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/xribbi/test_b1004
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+(a1003) std@edwk23:~/test/test_b1004$ git config --global color.ui auto
+(a1003) std@edwk23:~/test/test_b1004$ git config -l
+http.sslverify=true
+http.sslcapath=/home/std/.conda/envs/a1003/ssl/cacert.pem
+http.sslcainfo=/home/std/.conda/envs/a1003/ssl/cacert.pem
+user.email=xribbi.oz@gmail.com
+user.name=xribbi
+color.ui=auto
+credential.https://github.com.helper=
+credential.https://github.com.helper=!/usr/bin/gh auth git-credential
+credential.https://gist.github.com.helper=
+credential.https://gist.github.com.helper=!/usr/bin/gh auth git-credential
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/xribbi/test_b1004
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+(a1003) std@edwk23:~/test/test_b1004$ git config -l > ../git_config-l_3.txt
+(a1003) std@edwk23:~/test/test_b1004$ git remote add origin https://github.com/xribbi/my_git.git
+error: origin 리모트가 이미 있습니다.
+(a1003) std@edwk23:~/test/test_b1004$ git branch -M main
+(a1003) std@edwk23:~/test/test_b1004$ git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+(a1003) std@edwk23:~/test/test_b1004$ ll
+합계 2024
+drwxrwxr-x 5 std std   4096 11월 27 16:20  .
+drwxrwxr-x 3 std std   4096 11월 27 16:31  ..
+drwxrwxr-x 7 std std   4096 11월 27 16:33  .git
+drwxrwxr-x 2 std std   4096 11월 27 16:20  .ipynb_checkpoints
+-rw-rw-r-- 1 std std    867 11월 27 16:20  2024-11-25_a1003_pytorch.txt
+-rw-rw-r-- 1 std std  16878 11월 27 16:20  Pytorch_tutorial_2024-11-25.ipynb
+-rw-rw-r-- 1 std std  74231 11월 27 16:20  Pytorch_tutorial_2024-11-25_xtal6.ipynb
+-rw-rw-r-- 1 std std     16 11월 27 16:20  README.md
+-rw-rw-r-- 1 std std  39913 11월 27 16:20 'To install the GitHub CLI.hwpx'
+-rw-rw-r-- 1 std std  30305 11월 27 16:20 'To install the GitHub CLI.pdf'
+drwxrwxr-x 3 std std   4096 11월 27 16:20  doc
+-rw-rw-r-- 1 std std    621 11월 27 16:20  git_.bat
+-rwxrwxr-x 1 std std     63 11월 27 16:20  git_.sh
+-rw-rw-r-- 1 std std    462 11월 27 16:20  git_config-l.txt
+-rw-rw-r-- 1 std std  99546 11월 27 16:20  tensor_tutorial_2024-11-25.ipynb
+-rw-rw-r-- 1 std std 844755 11월 27 16:20  tensor_tutorial_2024-11-25_a1003_edwk23.ipynb
+-rw-rw-r-- 1 std std 453865 11월 27 16:20  tensor_tutorial_2024-11-25_xtal6.ipynb
+-rw-rw-r-- 1 std std 453864 11월 27 16:20  tensor_tutorial_2024-11-26_x188.ipynb
+(a1003) std@edwk23:~/test/test_b1004$ more git_.sh 
+#!/usr/bin/bash
+git pull
+git add *
+git commit -m "_"
+git push
+
+(a1003) std@edwk23:~/test/test_b1004$ source ./git_.sh 
+이미 업데이트 상태입니다.
+현재 브랜치 main
+브랜치가 'origin/main'에 맞게 업데이트된 상태입니다.
+
+커밋할 사항 없음, 작업 폴더 깨끗함
+Everything up-to-date
+(a1003) std@edwk23:~/test/test_b1004$ mkdir git_
+(a1003) std@edwk23:~/test/test_b1004$ mv ../git_config-l_* git_
+(a1003) std@edwk23:~/test/test_b1004$ ls -al git_
+합계 20
+drwxrwxr-x 2 std std 4096 11월 27 16:34 .
+drwxrwxr-x 6 std std 4096 11월 27 16:34 ..
+-rw-rw-r-- 1 std std  706 11월 27 16:14 git_config-l_1.txt
+-rw-rw-r-- 1 std std  424 11월 27 16:16 git_config-l_2.txt
+-rw-rw-r-- 1 std std  688 11월 27 16:31 git_config-l_3.txt
+(a1003) std@edwk23:~/test/test_b1004$ git config -l > git_/git_config-l_4.txt
+

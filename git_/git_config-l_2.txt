@@ -1,0 +1,10 @@
+http.sslverify=true
+http.sslcapath=/home/std/.conda/envs/a1003/ssl/cacert.pem
+http.sslcainfo=/home/std/.conda/envs/a1003/ssl/cacert.pem
+user.email=xribbi.oz@gmail.com
+user.name=xribbi
+color.ui=auto
+credential.https://github.com.helper=
+credential.https://github.com.helper=!/usr/bin/gh auth git-credential
+credential.https://gist.github.com.helper=
+credential.https://gist.github.com.helper=!/usr/bin/gh auth git-credential
