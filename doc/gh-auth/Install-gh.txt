@@ -1,0 +1,243 @@
+(a1003) std@edwk23:~/test/test_b1004$ git push
+Username for 'https://github.com': xribbi
+Password for 'https://xribbi@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: https://github.com/xribbi/test_b1004/에 대한 인증이 실패하였습니다
+(a1003) std@edwk23:~/test/test_b1004$ git push
+Username for 'https://github.com': xribbi.oz@gmail.com
+Password for 'https://xribbi.oz@gmail.com@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: https://github.com/xribbi/test_b1004/에 대한 인증이 실패하였습니다
+(a1003) std@edwk23:~/test/test_b1004$ git push
+Username for 'https://github.com': xribbi
+Password for 'https://xribbi@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: https://github.com/xribbi/test_b1004/에 대한 인증이 실패하였습니다
+(a1003) std@edwk23:~/test/test_b1004$ ^C
+(a1003) std@edwk23:~/test/test_b1004$ gh
+명령어 'gh' 을(를) 찾을 수 없습니다. 그러나 다음을 통해 설치할 수 있습니다:
+snap install gh       # version 2.6.0-15-g1a10fd5a, or
+apt  install gh       # version 2.4.0+dfsg1-2
+apt  install gitsome  # version 0.8.0+ds-6ubuntu1
+'snap info gh'에서 추가적인 버전을 확인하십시오.
+(a1003) std@edwk23:~/test/test_b1004$ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg 
+(a1003) std@edwk23:~/test/test_b1004$ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg |sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+[sudo] std 암호: 
+죄송합니다만, 다시 시도하십시오.
+[sudo] std 암호: 
+죄송합니다만, 다시 시도하십시오.
+[sudo] std 암호: 
+std은(는) sudoers 설정 파일에 없습니다.  이 시도를 보고합니다.
+(a1003) std@edwk23:~/test/test_b1004$ su
+암호: 
+root@edwk23:/home/std/test/test_b1004# curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg |sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+4+1 records in
+4+1 records out
+2270 bytes (2.3 kB, 2.2 KiB) copied, 0.0815133 s, 27.8 kB/s
+root@edwk23:/home/std/test/test_b1004# ls -al /usr/share/keyrings/
+total 84
+drwxr-xr-x   2 root root  4096 11월 27 13:46 .
+drwxr-xr-x 326 root root 12288 10월 18 11:02 ..
+-rw-r--r--   1 root root  2270 11월 27 13:46 githubcli-archive-keyring.gpg
+-rw-r--r--   1 root root  1167 10월 14 10:45 ros-archive-keyring.gpg
+-rw-r--r--   1 root root  7399  9월 18  2018 ubuntu-archive-keyring.gpg
+-rw-r--r--   1 root root  6713 10월 27  2016 ubuntu-archive-removed-keys.gpg
+-rw-r--r--   1 root root  3023  3월 27  2021 ubuntu-cloudimage-keyring.gpg
+-rw-r--r--   1 root root     0  1월 18  2018 ubuntu-cloudimage-removed-keys.gpg
+-rw-r--r--   1 root root  1227  5월 28  2010 ubuntu-master-keyring.gpg
+-rw-r--r--   1 root root  1150  8월  8 23:00 ubuntu-pro-anbox-cloud.gpg
+-rw-r--r--   1 root root  2247  8월  8 23:00 ubuntu-pro-cc-eal.gpg
+-rw-r--r--   1 root root  2274  8월  8 23:00 ubuntu-pro-cis.gpg
+-rw-r--r--   1 root root  2236  8월  8 23:00 ubuntu-pro-esm-apps.gpg
+-rw-r--r--   1 root root  2264  8월  8 23:00 ubuntu-pro-esm-infra.gpg
+-rw-r--r--   1 root root  2275  8월  8 23:00 ubuntu-pro-fips.gpg
+-rw-r--r--   1 root root  2275  8월  8 23:00 ubuntu-pro-fips-preview.gpg
+-rw-r--r--   1 root root  2250  8월  8 23:00 ubuntu-pro-realtime-kernel.gpg
+-rw-r--r--   1 root root  2235  8월  8 23:00 ubuntu-pro-ros.gpg
+root@edwk23:/home/std/test/test_b1004# more /usr/share/keyrings/githubcli-archive-keyring.gpg 
+�
+C$����[T��:�{A�0
+�=����w٠n�:7ᑞ2]A�zi�����؞�C�1=g������������E�١.�ϳ5�73��u���LCa����3�6W���4J��z6m�����thUP�2�T�����JI��,��������T4`��1��'���T�=�C��H"+�Q�,�oKR����L�D/!�[ꩡ�q8\Z�
+                                                                                                                                                               �A�&GitHub CLI <op
+ensource+cli@github.com>�>
+                          	
+	
+       !,a ��lz�s#���uq`Yf٧�	���
+	#���uq`Y 
+                 �}D�Q��"2]�[BDF�}yh�(�pie�{�_�n�ި!�%�������y����R ������X���y[��T<)�\�	��}�x�*,hð���q0M�8����`9	K���d���!�p
+                                                                                                                                   d�x����)�E$alhy4�����;t�"�=���x���Ge�2�dS�@ܒ���b_
+$R�Y����k�J.�����M��aZ��00�䢜P �s5���(�$�=g��=S�����$�����������e��B�tCb��G,��GG�ՄW������d����Hd�f��c�\��f��
+�d؂҅����_�$^�7h��\x�%�j��+����L�_ׄp$J)��?�C��?�?�an]��"kl_�x.��4Ѻ�/�>�V��c
+ل���O�A��������D������
+                      A�������nK�qo�)�	l�~u96w��p�P�\~ai��@�L#.bY��W��Jc�x@@�T�Z�O�^�.6��u*z#|�JF^�
+ԧ����8���W%C!�9ix��ۆ���-{�M��-^Li��E��ؘ����_�׆Icj}��<�n��g��q�L�n��]᠄<�$1�d�����P��~]<h��(��唰Fc$��n92�T��ݹ/��D<�e��^��� Z(h�P������y�O�F�a^L�~�dR[�v&�C3˽�`����8�w�+���¦f4���
+                                                                                                                                                                             ��z�
+root@edwk23:/home/std/test/test_b1004# ll
+total 1956
+drwxrwxr-x 5 std std   4096 11월 27 13:24 ./
+drwxrwxr-x 4 std std   4096 11월 27 13:20 ../
+-rw-rw-r-- 1 std std    867 11월 27 13:16 2024-11-25_a1003_pytorch.txt
+-rw-rw-r-- 1 std std     18 11월 27 13:19 .alias
+drwxrwxr-x 3 std std   4096 11월 27 13:35 doc/
+drwxrwxr-x 7 std std   4096 11월 27 13:25 .git/
+-rw-rw-r-- 1 std std    621 11월 27 13:16 git_.bat
+-rw-rw-r-- 1 std std    462 11월 27 13:24 git_config-l.txt
+-rwxrwxr-x 1 std std     63 11월 27 13:22 git_.sh*
+drwxrwxr-x 2 std std   4096 11월 27 13:16 .ipynb_checkpoints/
+-rw-rw-r-- 1 std std  16878 11월 27 13:16 Pytorch_tutorial_2024-11-25.ipynb
+-rw-rw-r-- 1 std std  74231 11월 27 13:16 Pytorch_tutorial_2024-11-25_xtal6.ipynb
+-rw-rw-r-- 1 std std     16 11월 27 13:16 README.md
+-rw-rw-r-- 1 std std 844755 11월 27 13:16 tensor_tutorial_2024-11-25_a1003_edwk23.ipynb
+-rw-rw-r-- 1 std std  99546 11월 27 13:16 tensor_tutorial_2024-11-25.ipynb
+-rw-rw-r-- 1 std std 453865 11월 27 13:16 tensor_tutorial_2024-11-25_xtal6.ipynb
+-rw-rw-r-- 1 std std 453864 11월 27 13:16 tensor_tutorial_2024-11-26_x188.ipynb
+root@edwk23:/home/std/test/test_b1004# chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg
+root@edwk23:/home/std/test/test_b1004# ls -al /usr/share/keyrings/
+total 84
+drwxr-xr-x   2 root root  4096 11월 27 13:46 .
+drwxr-xr-x 326 root root 12288 10월 18 11:02 ..
+-rw-r--r--   1 root root  2270 11월 27 13:46 githubcli-archive-keyring.gpg
+-rw-r--r--   1 root root  1167 10월 14 10:45 ros-archive-keyring.gpg
+-rw-r--r--   1 root root  7399  9월 18  2018 ubuntu-archive-keyring.gpg
+-rw-r--r--   1 root root  6713 10월 27  2016 ubuntu-archive-removed-keys.gpg
+-rw-r--r--   1 root root  3023  3월 27  2021 ubuntu-cloudimage-keyring.gpg
+-rw-r--r--   1 root root     0  1월 18  2018 ubuntu-cloudimage-removed-keys.gpg
+-rw-r--r--   1 root root  1227  5월 28  2010 ubuntu-master-keyring.gpg
+-rw-r--r--   1 root root  1150  8월  8 23:00 ubuntu-pro-anbox-cloud.gpg
+-rw-r--r--   1 root root  2247  8월  8 23:00 ubuntu-pro-cc-eal.gpg
+-rw-r--r--   1 root root  2274  8월  8 23:00 ubuntu-pro-cis.gpg
+-rw-r--r--   1 root root  2236  8월  8 23:00 ubuntu-pro-esm-apps.gpg
+-rw-r--r--   1 root root  2264  8월  8 23:00 ubuntu-pro-esm-infra.gpg
+-rw-r--r--   1 root root  2275  8월  8 23:00 ubuntu-pro-fips.gpg
+-rw-r--r--   1 root root  2275  8월  8 23:00 ubuntu-pro-fips-preview.gpg
+-rw-r--r--   1 root root  2250  8월  8 23:00 ubuntu-pro-realtime-kernel.gpg
+-rw-r--r--   1 root root  2235  8월  8 23:00 ubuntu-pro-ros.gpg
+root@edwk23:/home/std/test/test_b1004# vi __.sh
+root@edwk23:/home/std/test/test_b1004# vi __.sh
+root@edwk23:/home/std/test/test_b1004# code __.sh
+You are trying to start Visual Studio Code as a super user which isn't recommended. If this was intended, please add the argument `--no-sandbox` and specify an alternate user data directory using the `--user-data-dir` argument.
+root@edwk23:/home/std/test/test_b1004# ls -al
+total 1960
+drwxrwxr-x 5 std  std    4096 11월 27 13:48 .
+drwxrwxr-x 4 std  std    4096 11월 27 13:20 ..
+-rw-rw-r-- 1 std  std     867 11월 27 13:16 2024-11-25_a1003_pytorch.txt
+-rw-rw-r-- 1 std  std      18 11월 27 13:19 .alias
+drwxrwxr-x 3 std  std    4096 11월 27 13:35 doc
+drwxrwxr-x 7 std  std    4096 11월 27 13:25 .git
+-rw-rw-r-- 1 std  std     621 11월 27 13:16 git_.bat
+-rw-rw-r-- 1 std  std     462 11월 27 13:24 git_config-l.txt
+-rwxrwxr-x 1 std  std      63 11월 27 13:22 git_.sh
+drwxrwxr-x 2 std  std    4096 11월 27 13:16 .ipynb_checkpoints
+-rw-rw-r-- 1 std  std   16878 11월 27 13:16 Pytorch_tutorial_2024-11-25.ipynb
+-rw-rw-r-- 1 std  std   74231 11월 27 13:16 Pytorch_tutorial_2024-11-25_xtal6.ipynb
+-rw-rw-r-- 1 std  std      16 11월 27 13:16 README.md
+-rw-r--r-- 1 root root    260 11월 27 13:48 __.sh
+-rw-rw-r-- 1 std  std  844755 11월 27 13:16 tensor_tutorial_2024-11-25_a1003_edwk23.ipynb
+-rw-rw-r-- 1 std  std   99546 11월 27 13:16 tensor_tutorial_2024-11-25.ipynb
+-rw-rw-r-- 1 std  std  453865 11월 27 13:16 tensor_tutorial_2024-11-25_xtal6.ipynb
+-rw-rw-r-- 1 std  std  453864 11월 27 13:16 tensor_tutorial_2024-11-26_x188.ipynb
+root@edwk23:/home/std/test/test_b1004# ls -al /usr/share/keyrings/
+total 84
+drwxr-xr-x   2 root root  4096 11월 27 13:46 .
+drwxr-xr-x 326 root root 12288 10월 18 11:02 ..
+-rw-r--r--   1 root root  2270 11월 27 13:46 githubcli-archive-keyring.gpg
+-rw-r--r--   1 root root  1167 10월 14 10:45 ros-archive-keyring.gpg
+-rw-r--r--   1 root root  7399  9월 18  2018 ubuntu-archive-keyring.gpg
+-rw-r--r--   1 root root  6713 10월 27  2016 ubuntu-archive-removed-keys.gpg
+-rw-r--r--   1 root root  3023  3월 27  2021 ubuntu-cloudimage-keyring.gpg
+-rw-r--r--   1 root root     0  1월 18  2018 ubuntu-cloudimage-removed-keys.gpg
+-rw-r--r--   1 root root  1227  5월 28  2010 ubuntu-master-keyring.gpg
+-rw-r--r--   1 root root  1150  8월  8 23:00 ubuntu-pro-anbox-cloud.gpg
+-rw-r--r--   1 root root  2247  8월  8 23:00 ubuntu-pro-cc-eal.gpg
+-rw-r--r--   1 root root  2274  8월  8 23:00 ubuntu-pro-cis.gpg
+-rw-r--r--   1 root root  2236  8월  8 23:00 ubuntu-pro-esm-apps.gpg
+-rw-r--r--   1 root root  2264  8월  8 23:00 ubuntu-pro-esm-infra.gpg
+-rw-r--r--   1 root root  2275  8월  8 23:00 ubuntu-pro-fips.gpg
+-rw-r--r--   1 root root  2275  8월  8 23:00 ubuntu-pro-fips-preview.gpg
+-rw-r--r--   1 root root  2250  8월  8 23:00 ubuntu-pro-realtime-kernel.gpg
+-rw-r--r--   1 root root  2235  8월  8 23:00 ubuntu-pro-ros.gpg
+root@edwk23:/home/std/test/test_b1004# ls -al /usr/share/keyrings/githubcli-archive-keyring.gpg 
+-rw-r--r-- 1 root root 2270 11월 27 13:46 /usr/share/keyrings/githubcli-archive-keyring.gpg
+root@edwk23:/home/std/test/test_b1004# more _.sh 
+#
+# 3rd step
+#
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg ] https://cli.github.com/packages stable main" | tee /etc/apt/sources.list.
+d/github-cli.lis
+root@edwk23:/home/std/test/test_b1004# source _.sh 
+deb [arch=amd64 signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg ] https://cli.github.com/packages stable main
+root@edwk23:/home/std/test/test_b1004# source _.sh 
+deb [arch=amd64 signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg ] https://cli.github.com/packages stable main
+root@edwk23:/home/std/test/test_b1004# ls -al /etc/apt/sources.list
+-rw-rw-r-- 1 root root 2825 10월 14 10:44 /etc/apt/sources.list
+root@edwk23:/home/std/test/test_b1004# ls -al /etc/apt/sources.lis
+ls: cannot access '/etc/apt/sources.lis': No such file or directory
+root@edwk23:/home/std/test/test_b1004# ls -al /etc/apt/sources.lis*
+-rw-rw-r-- 1 root root 2825 10월 14 10:44 /etc/apt/sources.list
+
+/etc/apt/sources.list.d:
+total 24
+drwxr-xr-x 2 root root 4096 11월 27 13:54 .
+drwxr-xr-x 8 root root 4096 12월 20  2023 ..
+-rw-r--r-- 1 root root  122 11월 27 13:52 github-cli.lis
+-rw-r--r-- 1 root root  122 11월 27 13:54 github-cli.list
+-rw-r--r-- 1 root root  118 10월 14 10:45 ros2.list
+-rw-r--r-- 1 root root  204 10월 14 13:24 vscode.list
+root@edwk23:/home/std/test/test_b1004# rm /etc/apt/sources.lis
+rm: cannot remove '/etc/apt/sources.lis': No such file or directory
+root@edwk23:/home/std/test/test_b1004# rm /etc/apt/sources.list.d/github-cli.lis
+root@edwk23:/home/std/test/test_b1004# apt update
+Get:1 https://cli.github.com/packages stable InRelease [3,917 B]
+Hit:2 https://packages.microsoft.com/repos/code stable InRelease                                                                                                                                                      
+Get:3 https://cli.github.com/packages stable/main amd64 Packages [346 B]                                                                                                           
+Hit:4 http://packages.ros.org/ros2/ubuntu jammy InRelease                                                                                                     
+Hit:5 http://kr.archive.ubuntu.com/ubuntu jammy InRelease                                                                       
+Get:6 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Get:7 http://kr.archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+Get:8 http://kr.archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+Get:9 http://security.ubuntu.com/ubuntu jammy-security/main amd64 DEP-11 Metadata [43.0 kB]
+Get:10 http://kr.archive.ubuntu.com/ubuntu jammy-updates/main i386 Packages [729 kB]
+Get:11 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 DEP-11 Metadata [208 B]
+Get:12 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 DEP-11 Metadata [126 kB]
+Get:13 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 DEP-11 Metadata [208 B]            
+Get:14 http://kr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [2,179 kB]
+Get:15 http://kr.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [372 kB]
+Get:16 http://kr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 DEP-11 Metadata [103 kB]
+Get:17 http://kr.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 DEP-11 Metadata [212 B]
+Get:18 http://kr.archive.ubuntu.com/ubuntu jammy-updates/universe i386 Packages [751 kB]
+Get:19 http://kr.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1,177 kB]
+Get:20 http://kr.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [287 kB]
+Get:21 http://kr.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 DEP-11 Metadata [355 kB]
+Get:22 http://kr.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 DEP-11 Metadata [940 B]
+Get:23 http://kr.archive.ubuntu.com/ubuntu jammy-backports/main amd64 DEP-11 Metadata [5,316 B]
+Get:24 http://kr.archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 DEP-11 Metadata [212 B]
+Get:25 http://kr.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 DEP-11 Metadata [17.8 kB]
+Get:26 http://kr.archive.ubuntu.com/ubuntu jammy-backports/universe DEP-11 48x48 Icons [21.8 kB]
+Get:27 http://kr.archive.ubuntu.com/ubuntu jammy-backports/universe DEP-11 64x64 Icons [31.0 kB]
+Get:28 http://kr.archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 DEP-11 Metadata [212 B]
+Fetched 6,589 kB in 3s (2,006 kB/s)                               
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+113 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@edwk23:/home/std/test/test_b1004# apt install gh
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  gh
+0 upgraded, 1 newly installed, 0 to remove and 113 not upgraded.
+Need to get 13.7 MB of archives.
+After this operation, 50.4 MB of additional disk space will be used.
+Get:1 https://cli.github.com/packages stable/main amd64 gh amd64 2.62.0 [13.7 MB]
+Fetched 13.7 MB in 2s (6,268 kB/s)
+Selecting previously unselected package gh.
+(Reading database ... 321007 files and directories currently installed.)
+Preparing to unpack .../archives/gh_2.62.0_amd64.deb ...
+Unpacking gh (2.62.0) ...
+Setting up gh (2.62.0) ...
+Processing triggers for man-db (2.10.2-1) ...
+root@edwk23:/home/std/test/test_b1004#
